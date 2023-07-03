@@ -1,0 +1,190 @@
+.bow-and-arrow {
+  width: 200px;
+  height: 160px;
+  position: relative;
+}
+.bow-and-arrow path {
+  fill: #000;
+}
+.bow-and-arrow .arrow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+.bow-and-arrow .bow .string {
+  position: absolute;
+  bottom: 33%;
+  height: 1%;
+  background-color: #000;
+  transition: all 0.5s ease-in-out;
+  width: sqrt(pow(100px, 2)pow(100px, 2));
+}
+.bow-and-arrow .bow .string:first-of-type {
+  left: 0;
+  transform: rotateZ(10deg);
+  transform-origin: 0 0;
+}
+.bow-and-arrow .bow .string:last-of-type {
+  right: 0;
+  transform: rotateZ(-10deg);
+  transform-origin: 100% 100%;
+}
+.bow-and-arrow:not(:active) .string:first-of-type {
+  animation: vibrate-left 0.5s linear 0s;
+}
+.bow-and-arrow:not(:active) .string:last-of-type {
+  animation: vibrate-left 0.5s linear 0s;
+}
+.bow-and-arrow:not(:active) .arrow {
+  animation: flyaway 0.5s linear 0s;
+}
+.bow-and-arrow:not(:active):hover .arrow {
+  top: 15%;
+}
+.bow-and-arrow:not(:active):hover .bow .string:first-of-type {
+  transform: rotateZ(24deg);
+}
+.bow-and-arrow:not(:active):hover .bow .string:last-of-type {
+  transform: rotateZ(-24deg);
+}
+
+@keyframes vibrate-left {
+  0% {
+    transform: rotateZ(10deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  10% {
+    transform: rotateZ(-9deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  20% {
+    transform: rotateZ(8deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  30% {
+    transform: rotateZ(-7deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  40% {
+    transform: rotateZ(6deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  50% {
+    transform: rotateZ(-5deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  60% {
+    transform: rotateZ(4deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  70% {
+    transform: rotateZ(-3deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  80% {
+    transform: rotateZ(2deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  90% {
+    transform: rotateZ(-1deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  100% {
+    transform: rotateZ(0deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  110% {
+    transform: rotateZ(1deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  120% {
+    transform: rotateZ(-2deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+}
+@keyframes vibrate-right {
+  0% {
+    transform: rotateZ(-10deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  10% {
+    transform: rotateZ(9deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  20% {
+    transform: rotateZ(-8deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  30% {
+    transform: rotateZ(7deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  40% {
+    transform: rotateZ(-6deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  50% {
+    transform: rotateZ(5deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  60% {
+    transform: rotateZ(-4deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  70% {
+    transform: rotateZ(3deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  80% {
+    transform: rotateZ(-2deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  90% {
+    transform: rotateZ(1deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  100% {
+    transform: rotateZ(0deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  110% {
+    transform: rotateZ(-1deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+  120% {
+    transform: rotateZ(2deg);
+    width: sqrt(pow(100px, 2)pow(100px, 2));
+  }
+}
+@keyframes flyaway {
+  0% {
+    opacity: 1;
+    top: 0;
+  }
+  50% {
+    opacity: 1;
+    top: -500px;
+  }
+  100% {
+    opacity: 0;
+    top: -1000px;
+  }
+}
+/* just for show */
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.bow-and-arrow {
+  transform: rotate(90deg);
+}/*# sourceMappingURL=bow-and-arrow.css.map */
