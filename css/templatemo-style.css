@@ -26,7 +26,7 @@ hr {
 }
 .title {
   color: #303030;
-  font-size: 60px;
+  font-size: 40px;
   padding-bottom: 10px;
   text-transform: uppercase;
 }
@@ -172,6 +172,7 @@ hr {
 .tm-portfolio-title {
   text-align: center;
   text-transform: uppercase;
+  font-size: 60px;
 }
 .portfolio-item-title {
   color:rgb(234, 233, 241);
@@ -357,6 +358,10 @@ hr {
   margin: 30px;
   color: rgb(11, 6, 6);
 }
+
+#this-is-me {
+  font-size: 60px;
+}
 /* END ABOUT */
 
 /* START SOCIAL */
@@ -451,5 +456,17 @@ input { height: 50px; }
 /* START MEDIA 360 */
 @media screen and (max-width:360px){
   .navbar-default .navbar-brand {  padding-top: 2px; }
+  .bio-copy {
+    color:rgb(26, 1, 95);
+    background-color: rgba(212, 141, 7, 0.648);
+  }
+  .tm-portfolio-title {
+    font-size: 40px;
+  }
+  #this-is-me {
+    font-size: 40px;
+  }
+  
+  
 }
 /* END MEDIA 360 */

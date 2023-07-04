@@ -5,12 +5,11 @@ body {
   .macbook {
     width: 150px;
     height: 96px;
-    position: absolute;
     left: 50%;
     top: 50%;
-    margin: -75px 0 0 -48px;
     perspective: 500px;
-    margin-top: 150px;
+    margin-left: 40%;
+    margin-top: 30%;
   }
   .shadow {
     position: absolute;
